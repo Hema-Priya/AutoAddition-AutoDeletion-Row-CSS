@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+.grid-container {
+  display: inline-grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+   justify-content: center;
+   
+}
+
+.grid-item {
+ 
+ border: 1px solid rgba(0, 0, 0, 0.8);
+ padding: 20px;
+ font-size: 30px;
+ text-align: center;
+}
+
+.grid-item1
+{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+ padding: 20px;
+ font-size: 30px;
+ text-align: center;
+    display:none;
+}
+
+.button31 {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:rgb(48, 231, 222);
+  position:fixed;
+    transition: .5s ease;
+    top: 100px;
+    left: 250px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+.button1 {background-color: #008CBA;} /* Blue */
+.button2 {background-color: #f44336;} /* Red */ 
+.button3 {border-radius: 50%;
+}
+.button1:active {
+ background-color: rgb(3, 67, 88);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  
+}
+
+.button2:active {
+  background-color: #be0808;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  
+}
+
+
+</style>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+ var x="1";
+        function myFunction(elementId) {
+            
+            if(elementId==b1)
+          document.getElementById("Tab").style.display = "inline-grid";
+          else if(elementId==b2)
+          document.getElementById("Tab").style.display = "none";
+          else
+          {if(x=="17"){alert("Max limit reached");}
+          else{
+            document.getElementById(x).style.display="inline";
+         document.getElementById(parseInt(x)+1).style.display="inline";
+          x=(parseInt(x)+2);}
+          }
+          }
+         
+        </script>
+</head>
+<body>
+
+<h1>A table using Grid Layout:</h1>
+
+<div id="Tab" class="grid-container" >   
+    <div class="grid-item item">Id</div>                      
+  <div class="grid-item item">Name</div>  
+  <div name="s" class="grid-item item" >1</div>                             
+  <div name="s" class="grid-item item">Priya  <a href="#" onclick="document.getElementsByName('s')[0].style.display = 'none'; document.getElementsByName('s')[1].style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>  
+  <div id="22"class="grid-item item">2</div>
+  <div id="23"class="grid-item item">Navya <a href="#" onclick="document.getElementById('22').style.display = 'none';document.getElementById('23').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>
+  <div id="2" class="grid-item1 item" >3</div>
+  <div id="1" class="grid-item1 item" >Pinky <a href="#" onclick="document.getElementById('1').style.display = 'none';document.getElementById('2').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>
+  <div id="4" class="grid-item1 item" >4</div> 
+  <div id="3" class="grid-item1 item" >Sweety <a href="#" onclick="document.getElementById('3').style.display = 'none';document.getElementById('4').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>
+  <div id="6" class="grid-item1 item" >5</div>                                                            
+  <div id="5" class="grid-item1 item" >Tara <a href="#" onclick="document.getElementById('5').style.display = 'none';document.getElementById('6').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>
+  <div id="8" class="grid-item1 item" >6</div>
+  <div id="7" class="grid-item1 item" >Nicky <a href="#" onclick="document.getElementById('7').style.display = 'none';document.getElementById('8').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>
+  <div id="10" class="grid-item1 item" >7</div>
+  <div id="9" class="grid-item1 item" >Dolly <a href="#" onclick="document.getElementById('9').style.display = 'none';document.getElementById('10').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>
+  <div id="12" class="grid-item1 item" >8</div>
+  <div id="11" class="grid-item1 item" >Sravya <a href="#" onclick="document.getElementById('11').style.display = 'none';document.getElementById('12').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>
+  <div id="14" class="grid-item1 item" >9</div>    
+  <div id="13" class="grid-item1 item">Kavya <a href="#" onclick="document.getElementById('13').style.display = 'none';document.getElementById('14').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>                                                                                  
+  <div id="16" class="grid-item1 item" >10</div>                                                   
+  <div id="15" class="grid-item1 item" >Sanjana <a href="#" onclick="document.getElementById('15').style.display = 'none';document.getElementById('16').style.display = 'none'">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a></span></div>                                                                                 
+    
+</div>
+
+<div>
+<button id="b1" class="button button1" onclick="myFunction(b1)">Show</button>
+<button  id="b2" class="button button2" onclick="myFunction(b2)">Hide</button>
+<button  id="b3" class="button31 button3" onclick="myFunction(b3)">+</button>
+</div>
+
+</body>
+</html>
